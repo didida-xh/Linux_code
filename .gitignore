@@ -3,3 +3,5 @@ build/
 test
 pipe
 TestPipe
+FIFO/Client
+FIFO/Server
