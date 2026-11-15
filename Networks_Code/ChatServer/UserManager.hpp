@@ -55,7 +55,10 @@ public:
     {
         return _users;
     }
+    ~UserManager()
+    {
+    }
 
 private:
     std::vector<InetAddr> _users;
-}
+};

@@ -34,7 +34,7 @@ class UdpServer
 public:
     UdpServer(uint16_t port = default_port)
         : _port(port),
-          _sockfd(default_fd),
+          _sockfd(default_fd)
     {
     }
     ~UdpServer()
@@ -54,7 +54,7 @@ public:
 
         InetAddr local(_port);
 
-        int n = bind(_sockfd, (struct sockaddr *)(local.GetNetAddress()), local.len());
+        int n = bind(_sockfd, (struct sockaddr *)(local.GetNetAddress()), local.Len());
         if (n < 0)
         {
             LOG(LogLevel::FATAL) << "bind socket error";
