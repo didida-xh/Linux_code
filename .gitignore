@@ -5,3 +5,5 @@ pipe
 TestPipe
 FIFO/Client
 FIFO/Server
+client_tcp
+server_tcp
